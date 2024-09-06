@@ -3947,7 +3947,8 @@ public:
             }
 
             auto const den = (metrics.txPerLedger * metrics.txPerLedger);
-            FeeLevel64 feeLevel = (metrics.medFeeLevel * totalFactor + FeeLevel64{den - 1}) / den;
+            FeeLevel64 feeLevel =
+                (metrics.medFeeLevel * totalFactor + FeeLevel64{den - 1}) / den;
 
             auto result = toDrops(feeLevel, env.current()->fees().base).drops();
 
