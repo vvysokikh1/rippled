@@ -1,4 +1,4 @@
-------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 /*
     This file is part of rippled: https://github.com/ripple/rippled
     Copyright (c) 2023 Ripple Labs Inc.
@@ -470,7 +470,7 @@ private:
             oracle.remove(
                 {.owner = bad,
                  .seq = seq(1),
-                 .fee = baseFeeб
+                 .fee = baseFee,
                  .err = ter(terNO_ACCOUNT)});
         }
 
